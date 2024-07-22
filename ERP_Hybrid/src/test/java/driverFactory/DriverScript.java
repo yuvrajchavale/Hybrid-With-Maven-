@@ -1,5 +1,10 @@
 package driverFactory;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -88,6 +93,8 @@ public void startTest() throws Throwable
 					xl.setCellData(TCModule, j, 5, "Fail", outputpath);
 					logger.log(LogStatus.FAIL, Description);
 					Module_New="false";
+					File screen = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+				    FileUtils.copyFile(screen, new File("./target/screenshot/" + Description + FunctionLibrary.generateDate()+".png"));
 				}
 				if(Module_Status.equalsIgnoreCase("True"))
 				{
