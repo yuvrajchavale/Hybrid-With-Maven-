@@ -150,7 +150,7 @@ public class FunctionLibrary {
 			}
 			
 		}
-		//method for capture Stcok number into note pad
+		//method for capture Stock number into note pad
 		public static void captureStock(String LocatorType,String LocatorValue)throws Throwable
 		{
 			String stockNum="";

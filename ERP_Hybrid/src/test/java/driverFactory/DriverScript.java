@@ -82,6 +82,37 @@ public void startTest() throws Throwable
 						FunctionLibrary.closeBrowser();
 						logger.log(LogStatus.INFO, Description);
 					}
+					if(Object_Type.equalsIgnoreCase("dropDownAction"))
+					{
+						FunctionLibrary.dropDownAction(LType, LValue, Test_Data);
+						logger.log(LogStatus.INFO, Description);
+					}
+					if(Object_Type.equalsIgnoreCase("captureStock"))
+					{
+						FunctionLibrary.captureStock(LType, LValue);
+						logger.log(LogStatus.INFO, Description);
+					}
+					if(Object_Type.equalsIgnoreCase("stockTable"))
+					{
+						FunctionLibrary.stockTable();
+						logger.log(LogStatus.INFO, Description);
+					}
+					if(Object_Type.equalsIgnoreCase("captureSupplier"))
+					{
+						FunctionLibrary.captureSupplier(LType, LValue);
+					}
+					if(Object_Type.equalsIgnoreCase("supplierTable"))
+					{
+						FunctionLibrary.supplierTable();
+					}
+					if(Object_Type.equalsIgnoreCase("captureCustomer"))
+					{
+						FunctionLibrary.captureCustomer(LType, LValue);
+					}	
+					if(Object_Type.equalsIgnoreCase("customerTable"))
+					{
+						FunctionLibrary.customerTable();
+					}
 					//write as pass into status cell inTCmodule sheet
 					xl.setCellData(TCModule, j, 5, "Pass", outputpath);
 					logger.log(LogStatus.PASS, Description);
@@ -110,7 +141,7 @@ public void startTest() throws Throwable
 		}
 		else
 		{
-			//write as blocked into statuc cell for Tescases flag to N
+			//write as blocked into status cell for Testcases flag to N
 			xl.setCellData(TCSheet, i, 3, "Blocked", outputpath);
 		}
 	}
