@@ -12,7 +12,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import commonFunctions.FunctionLibrary;
 import utilities.ExcelFileUtil;
-//All methods acessed from commonFunction package src/test/java
+//All methods acess from commonFunction package src/test/java
 public class DriverScript {
 WebDriver driver;
 String inputpath ="./FileInput/Controller.xlsx";
