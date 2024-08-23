@@ -1,7 +1,6 @@
 package driverFactory;
 
 import java.io.File;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -13,7 +12,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import commonFunctions.FunctionLibrary;
 import utilities.ExcelFileUtil;
-
+//All methods acessed from commonFunction package src/test/java
 public class DriverScript {
 WebDriver driver;
 String inputpath ="./FileInput/Controller.xlsx";
