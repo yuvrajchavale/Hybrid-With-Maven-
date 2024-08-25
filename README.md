@@ -90,7 +90,7 @@ Make sure you have the following installed:
 <ol>
   <li><strong>Clone the repository:</strong>
     <pre>
-    git clone https://github.com/yourusername/ERP_Hybrid.git
+    git clone https://github.com/yuvrajchavale/Hybrid-With-Maven-.git
     cd ERP_Hybrid
     </pre>
   </li>
